@@ -77,51 +77,51 @@ const CodeBlock = () => {
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-    return (
-      <div className="px-5 md:px-0">
-    <div className="relative w-full max-w-xl mx-auto  rounded-xl shadow-2xl shadow-fuchsia-500/30 overflow-hidden my-6 bg-gray-800">
-      {/* Header */}
-      <div className="flex items-center p-2 bg-gray-900 border-b border-gray-700">
-        <div className="flex space-x-2">
-          <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-          <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-          <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+  return (
+    <div className="px-5 md:px-0">
+      <div className="relative w-full max-w-xl mx-auto  rounded-xl shadow-2xl shadow-fuchsia-500/30 overflow-hidden my-6 bg-gray-800">
+        {/* Header */}
+        <div className="flex items-center p-2 bg-gray-900 border-b border-gray-700">
+          <div className="flex space-x-2">
+            <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+            <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
+            <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+          </div>
+          <div className="flex-grow text-center text-xs text-gray-400 font-mono">
+            tanvir.json
+          </div>
         </div>
-        <div className="flex-grow text-center text-xs text-gray-400 font-mono">
-          tanvir.json
-        </div>
-      </div>
 
-      {/* Code Block */}
-      <div className="overflow-x-auto">
-        <SyntaxHighlighter
-          language="json"
-          style={dracula}
-          wrapLongLines={true}
-          showLineNumbers={false}
-          customStyle={{
-            padding: "10px",
-            margin: 0,
-            borderRadius: "0 0 12px 12px",
-            fontSize: "12px",
-            wordBreak: "break-word",
-            whiteSpace: "pre-wrap",
-            backgroundColor: "#282a36",
-          }}
+        {/* Code Block */}
+        <div className="overflow-x-auto">
+          <SyntaxHighlighter
+            language="json"
+            style={dracula}
+            wrapLongLines={true}
+            showLineNumbers={false}
+            customStyle={{
+              padding: "10px",
+              margin: 0,
+              borderRadius: "0 0 12px 12px",
+              fontSize: "12px",
+              wordBreak: "break-word",
+              whiteSpace: "pre-wrap",
+              backgroundColor: "#282a36",
+            }}
+          >
+            {jsonString}
+          </SyntaxHighlighter>
+        </div>
+
+        {/* Copy Button */}
+        <button
+          onClick={handleCopy}
+          className="absolute top-1 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs font-semibold px-2 py-1 rounded transition"
         >
-          {jsonString}
-        </SyntaxHighlighter>
+          {isCopied ? "Copied! ✅" : "Copy 📄"}
+        </button>
       </div>
-
-      {/* Copy Button */}
-      <button
-        onClick={handleCopy}
-        className="absolute top-1 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs font-semibold px-2 py-1 rounded transition"
-      >
-        {isCopied ? "Copied! ✅" : "Copy 📄"}
-      </button>
-            </div>
-            </div>
+    </div>
   );
 };
 
