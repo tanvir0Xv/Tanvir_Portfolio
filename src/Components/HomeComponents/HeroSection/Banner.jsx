@@ -106,7 +106,7 @@ const Banner = ({ onContactClick }) => {
                   Whatsapp
                 </a>
                 <a
-                  href="https://github.com/tanvir-hasan-code"
+                  href="https://github.com/tanvir0Xv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 border border-gray-400 rounded-xl relative overflow-hidden text-gray-300 transition-all duration-500 hover:bg-gray-400 hover:text-white hover:scale-105"
@@ -115,7 +115,7 @@ const Banner = ({ onContactClick }) => {
                   Github
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/tanvir-hasan01"
+                  href="https://www.linkedin.com/in/tanvir0Xv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 border border-blue-400 rounded-xl relative overflow-hidden text-blue-400 transition-all duration-500 hover:bg-blue-400 hover:text-white hover:scale-105"
