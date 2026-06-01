@@ -5,7 +5,7 @@ import { ExternalLink, Github, Server, Laptop } from "lucide-react";
 import useAxiosInstance from "../../../Hooks/useAxiosInstance";
 import AllProjectModal from "./allProjectModal";
 
-const MyProject = ({onAllProjectsClick}) => {
+const MyProject = ({ onAllProjectsClick }) => {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
   const axiosInstance = useAxiosInstance();
@@ -120,7 +120,7 @@ const MyProject = ({onAllProjectsClick}) => {
         onClick={onAllProjectsClick}
         className=" px-7 py-3 cursor-pointer flex mx-auto w-fit mt-14 rounded-xl font-semibold overflow-hidden text-white bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 transition-all duration-500 hover:scale-105"
       >
-          <span className="z-10">See All-Poject</span>
+        <span className="z-10">See All-Poject</span>
       </a>
       {/* -------- MODAL -------- */}
       {selectedProject && (

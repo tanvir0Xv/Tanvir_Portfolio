@@ -30,12 +30,17 @@ const MySkills = () => {
     const map = {};
     skills.forEach((skill) => {
       const IconComponent = Icons[skill.icon];
-      map[skill.icon] = IconComponent ? <IconComponent size={32} /> : <Icons.HelpCircle size={32} />;
+      map[skill.icon] = IconComponent ? (
+        <IconComponent size={32} />
+      ) : (
+        <Icons.HelpCircle size={32} />
+      );
     });
     return map;
   }, [skills]);
 
-  if (loading) return <p className="text-center text-white mt-20">Loading...</p>;
+  if (loading)
+    return <p className="text-center text-white mt-20">Loading...</p>;
   if (error) return <p className="text-center text-red-500 mt-20">{error}</p>;
 
   return (
@@ -59,7 +64,8 @@ const MySkills = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center mb-12 text-fuchsia-300"
         >
-          Here are the technologies and tools I work with to build modern web applications.
+          Here are the technologies and tools I work with to build modern web
+          applications.
         </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">

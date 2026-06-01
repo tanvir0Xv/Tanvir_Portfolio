@@ -121,7 +121,10 @@ const Footer = () => {
                 {links.find((l) => /Phone/i.test(l.type)) && (
                   <p className="">
                     <strong>Phone:</strong>{" "}
-                    <a href="tel:+8801796255213" className="text-fuchsia-500 hover:link">
+                    <a
+                      href="tel:+8801796255213"
+                      className="text-fuchsia-500 hover:link"
+                    >
                       {links.find((l) => /Phone/i.test(l.type)).value}
                     </a>
                   </p>
@@ -129,7 +132,10 @@ const Footer = () => {
                 {links.find((l) => /Email/i.test(l.type)) && (
                   <p className="">
                     <strong>Email:</strong>{" "}
-                    <a href="mailto:tanvirhasan9613@gmail.com?subject=Hello%20Tanvir&body=Hi%2C%20I%20am%20Tanvir%20Hasan.%20How%20can%20I%20assist%20you%20today%3F" className="text-fuchsia-500 hover:link ">
+                    <a
+                      href="mailto:tanvirhasan9613@gmail.com?subject=Hello%20Tanvir&body=Hi%2C%20I%20am%20Tanvir%20Hasan.%20How%20can%20I%20assist%20you%20today%3F"
+                      className="text-fuchsia-500 hover:link "
+                    >
                       {links.find((l) => /Email/i.test(l.type)).value}
                     </a>
                   </p>

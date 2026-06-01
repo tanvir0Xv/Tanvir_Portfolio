@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MessageCircle, Linkedin, X, Facebook, Github } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MessageCircle,
+  Linkedin,
+  X,
+  Facebook,
+  Github,
+} from "lucide-react";
 import Lottie from "lottie-react";
 import useAxiosInstance from "../../../Hooks/useAxiosInstance";
 import contactAnimated from "/public/contactAnimation.json";
@@ -57,7 +65,7 @@ export default function ContactModal({ onClose }) {
           onClick={onClose}
           className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
         >
-          <X size={28}/>
+          <X size={28} />
         </button>
 
         {/* Lottie Animation */}
@@ -69,7 +77,8 @@ export default function ContactModal({ onClose }) {
           Get In Touch with Tanvir
         </h2>
         <p className="text-white/80 text-center mb-6">
-          Your next project starts here. Please select your preferred method of contact below. I prioritize clear communication.
+          Your next project starts here. Please select your preferred method of
+          contact below. I prioritize clear communication.
         </p>
 
         <div className="flex flex-col md:flex-row md:flex-wrap gap-4 w-full max-h-[400px] overflow-y-auto md:overflow-y-hidden">
