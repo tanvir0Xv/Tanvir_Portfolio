@@ -1,12 +1,16 @@
 import { createBrowserRouter } from "react-router";
-import Home from "../Components/HomeComponents/Home/Home";
+import React, { lazy, Suspense } from 'react';
 
+const Home = lazy(() => import("../Components/HomeComponents/Home/Home"));
 
 export const router = createBrowserRouter([
 	{
 		path: "/",
-		Component: Home,
-		hydrateFallbackElement: <p>Loading....</p>,
+		element: (
+            <Suspense fallback={<div>Loading...</div>}>
+                <Home />
+            </Suspense>
+        ),
 		errorElement: <p>404</p>
 	}
 ])

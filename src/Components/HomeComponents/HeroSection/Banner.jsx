@@ -158,6 +158,7 @@ const Banner = ({ onContactClick }) => {
               src="/Banner_Image.JPG"
               alt="Profile"
               className="w-full h-full object-cover transition duration-500 hover:scale-110"
+              loading="lazy"
             />
           </div>
         </div>

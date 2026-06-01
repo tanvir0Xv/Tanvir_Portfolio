@@ -5,7 +5,7 @@ import animationData from "/public/AnimationData.json";
 
 const About = () => {
   return (
-    <div
+    <section
       id="About"
       className="bg-linear-to-b from-[#0A0118] via-[#0D0220] to-[#0A0118] relative pt-16 lg:pt-0"
     >
@@ -43,7 +43,7 @@ const About = () => {
           ></a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

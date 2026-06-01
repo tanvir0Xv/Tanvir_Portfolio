@@ -138,6 +138,7 @@ const MyProject = ({ onAllProjectsClick }) => {
                 src={selectedProject.banner}
                 className="w-full h-64 object-cover rounded-2xl mb-4 border border-white/20"
                 alt={selectedProject.name}
+                loading="lazy"
               />
             )}
 

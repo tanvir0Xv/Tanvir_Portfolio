@@ -50,6 +50,7 @@ export default function Navbar({ onContactClick }) {
           className="w-14 h-14 object-contain drop-shadow-[0_0_10px_#b026ff]"
           src="/main-logo.png"
           alt="Logo"
+          loading="lazy"
         />
         <h2
           className="text-xl font-bold bg-clip-text text-transparent 

@@ -45,7 +45,7 @@ export default function EducationCards() {
   if (error) return <p className="text-red-500">{error}</p>;
 
   return (
-    <div
+    <section
       id="Education"
       className=" bg-gradient-to-b from-[#0A0118] via-[#0D0220] to-[#0A0118] flex flex-col items-center justify-center py-12 px-4"
     >
@@ -146,6 +146,6 @@ export default function EducationCards() {
           100% { transform: translateY(0px) rotate(0deg) scale(1); }
         }
       `}</style>
-    </div>
+    </section>
   );
 }

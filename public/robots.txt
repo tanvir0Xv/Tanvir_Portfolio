@@ -1,0 +1,6 @@
+# সব সার্চ ইঞ্জিন বটের জন্য এই নিয়ম প্রযোজ্য
+User-agent: *
+Allow: /
+
+# আপনার সাইটম্যাপের সঠিক লিংকটি নিচে দিয়ে দিন
+Sitemap: https://your-portfolio-url.com/sitemap.xml
