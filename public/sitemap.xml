@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <!-- মেইন হোম বা পোর্টফোলিও পেজ -->
+    <!--  মেইন হোম বা পোর্টফোলিও পেজ  -->
     <url>
         <loc>https://portfolio--tanvir.web.app/</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
-
-    <!-- প্রজেক্ট পেজ (যদি আলাদা পেজ থাকে, না থাকলে এই অংশটুকু কেটে দিতে পারেন) -->
+    <!--  প্রজেক্ট পেজ  -->
     <url>
         <loc>https://portfolio--tanvir.web.app/projects</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- কন্টাক্ট পেজ (যদি আলাদা পেজ থাকে) -->
+    <!--  কন্টাক্ট পেজ  -->
     <url>
         <loc>https://portfolio--tanvir.web.app/contact</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
-
 </urlset>

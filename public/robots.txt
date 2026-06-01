@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # আপনার সাইটম্যাপের সঠিক লিংকটি নিচে দিয়ে দিন
-Sitemap: https://your-portfolio-url.com/sitemap.xml
+Sitemap: https://portfolio--tanvir.web.app/sitemap.xml
