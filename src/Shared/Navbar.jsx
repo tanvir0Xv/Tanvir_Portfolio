@@ -97,8 +97,8 @@ export default function Navbar({ onContactClick }) {
 
       {/* Premium Resume Button */}
       <motion.a
-        href="/Tanvir_Resume (2.0).pdf"
-        download="Tanvir_Resume (2.0).pdf"
+        href="/Tanvir_Resume(2.0).pdf"
+        download="Tanvir_Resume(2.0).pdf"
         whileHover={{ scale: 1.05 }}
         className="hidden lg:inline-block relative px-6 py-2 rounded-xl font-semibold overflow-hidden text-white cursor-pointer"
       >
